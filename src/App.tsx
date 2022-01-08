@@ -17,7 +17,7 @@ import {
   TokenListContainer,
   TokenListProvider,
 } from "@solana/spl-token-registry";
-import Swap from "@project-serum/swap-ui";
+import Swap from "../swap";
 import "./App.css";
 
 // App illustrating the use of the Swap component.
@@ -147,7 +147,7 @@ class NotifyingProvider extends Provider {
   ) {
     const newWallet = wallet as AnchorWallet;
     super(connection, newWallet, opts);
-    this.onTransaction = onTransaction;
+    this.onTransaction = onTransaction; 
   }
 
   async send(
