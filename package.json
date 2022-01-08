@@ -22,11 +22,10 @@
     "react-async-hook": "^3.6.2"
   },
   "scripts": {
-    "lint": "prettier src/** example/src/** --check",
-    "lint:fix": "prettier src/** example/src/** -w",
-    "build": "rm -rf dist && tsc --build tsconfig.json",
-    "docs": "typedoc --excludePrivate --out ./docs src/index.tsx --includeVersion --readme none",
-    "prepare": "tsc --build tsconfig.json"
+    "start": "../node_modules/.bin/react-app-rewired start",
+    "build": "../node_modules/.bin/react-app-rewired build",
+    "deploy": "gh-pages -d build/",
+    "build:npm": "rm -rf dist && tsc --build tsconfig.npm.json"
   },
   "eslintConfig": {
     "extends": [
