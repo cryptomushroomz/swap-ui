@@ -22,8 +22,8 @@
     "react-async-hook": "^3.6.2"
   },
   "scripts": {
-    "start": "../node_modules/.bin/react-app-rewired start",
-    "build": "../node_modules/.bin/react-app-rewired build",
+    "start": "./node_modules/.bin/react-app-rewired start",
+    "build": "./node_modules/.bin/react-app-rewired build",
     "deploy": "gh-pages -d build/",
     "build:npm": "rm -rf dist && tsc --build tsconfig.npm.json"
   },
