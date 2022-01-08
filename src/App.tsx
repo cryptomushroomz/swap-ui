@@ -17,7 +17,7 @@ import {
   TokenListContainer,
   TokenListProvider,
 } from "@solana/spl-token-registry";
-import Swap from "../swap";
+import Swap from "./swap";
 import "./App.css";
 
 // App illustrating the use of the Swap component.
